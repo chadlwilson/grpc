@@ -44,10 +44,11 @@ If you unpack a `grpc-native-debug` gem and look at the `symbols`
 directory, you might see something like this:
 
 ```
-grpc-native-debug-1.60.1-x86_64-linux/symbols/grpc-1.60.1-x86_64-linux-ruby-3.0.dbg
 grpc-native-debug-1.60.1-x86_64-linux/symbols/grpc-1.60.1-x86_64-linux-ruby-2.7.dbg
-grpc-native-debug-1.60.1-x86_64-linux/symbols/grpc-1.60.1-x86_64-linux-ruby-3.2.dbg
+grpc-native-debug-1.60.1-x86_64-linux/symbols/grpc-1.60.1-x86_64-linux-ruby-3.0.dbg
 grpc-native-debug-1.60.1-x86_64-linux/symbols/grpc-1.60.1-x86_64-linux-ruby-3.1.dbg
+grpc-native-debug-1.60.1-x86_64-linux/symbols/grpc-1.60.1-x86_64-linux-ruby-3.2.dbg
+grpc-native-debug-1.60.1-x86_64-linux/symbols/grpc-1.60.1-x86_64-linux-ruby-3.3.dbg
 ```
 
 In each of these `.dbg` files, the `ruby-<major>-<minor>` portion of the string
