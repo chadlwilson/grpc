@@ -495,10 +495,13 @@ def targets():
             "linux", "x64", "debian11", ruby_version="ruby_3_3", presubmit=True
         ),
         RubyDistribTest(
+            "linux", "x64", "debian11", ruby_version="ruby_3_4", presubmit=True
+        ),
+        RubyDistribTest(
             "linux",
             "x64",
             "debian11",
-            ruby_version="ruby_3_3",
+            ruby_version="ruby_3_4",
             protobuf_version="3.25",
             presubmit=True,
         ),
