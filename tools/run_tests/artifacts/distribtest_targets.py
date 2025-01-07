@@ -510,7 +510,11 @@ def targets():
         # should be set to zero, so we need special handling to avoid mistakenly
         # assuming that the rb_abi_version symbol exists).
         RubyDistribTest(
-            "linux", "x64", "debian11", ruby_version="ruby_3_4_0", presubmit=True,
+            "linux",
+            "x64",
+            "debian11",
+            ruby_version="ruby_3_4_0",
+            presubmit=True,
         ),
         RubyDistribTest("linux", "x64", "ubuntu2004"),
         RubyDistribTest("linux", "x64", "ubuntu2204", presubmit=True),
