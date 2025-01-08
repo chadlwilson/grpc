@@ -153,7 +153,7 @@ def have_ruby_abi_version()
   # special handling for ruby 3.4.0, which seems to have a bug in that
   # RUBY_PATCHLEVEL == -1 (normally only for dev versions). Meanwhile,
   # the rb_abi_version symbol is not present.
-  return false if if RUBY_VERSION == "3.4.0"
+  return false if RUBY_VERSION == "3.4.0"
   # development version of ruby: check if we're at minor version 3.2 or greater
   m = /(\d+)\.(\d+)/.match(RUBY_VERSION)
   if m.nil?
