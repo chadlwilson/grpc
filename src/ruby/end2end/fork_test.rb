@@ -34,7 +34,7 @@ def do_rpc(stub)
   stub.echo(Echo::EchoRequest.new(request: 'hello'), deadline: Time.now + 300)
 end
 
-def run_client(stub, child_port)
+def run_client(stub)
   do_rpc(stub)
   with_logging("parent: GRPC.prefork") { GRPC.prefork }
   pid = fork do
