@@ -514,12 +514,12 @@ def targets():
             presubmit=True,
         ),
         RubyDistribTest(
-          "linux-gnu",
-          "x64",
-          "debian11",
+            "linux-gnu",
+            "x64",
+            "debian11",
             ruby_version="ruby_3_3",
             protobuf_version="3.25",
-          presubmit=True,
+            presubmit=True,
         ),
         RubyDistribTest(
             "linux-gnu",
